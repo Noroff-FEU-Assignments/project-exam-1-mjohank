@@ -333,6 +333,7 @@ footer {
 }
 
 .btn:hover {
+  background-color: #f4c557;
   box-shadow: 5px 5px 23px rgba(132, 125, 122, 0.4);
 }
 
@@ -626,9 +627,6 @@ footer {
   text-align: center;
   width: 7rem;
   cursor: pointer;
-}
-.btn:hover {
-  background-color: var(--clr-main-background);
 }
 
 /****************************************************************************/
