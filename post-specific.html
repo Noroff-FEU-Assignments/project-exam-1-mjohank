@@ -3,105 +3,291 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><span class="post-title"></span> | Roasted Reverie</title>
+    <title>MUSEFLETTE | Roasted Reverie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5d47c883f3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- HEADER -->
 
+    <header>
+      <div class="logo-container">
+        <a href="index.html" class="logo_large"
+          ><img src="resources/logos/logo-large.png" alt="logo"
+        /></a>
+      </div>
+
+      <nav>
+        <a href="index.html" class="current-page">Home</a>
+        <a href="posts.html">Posts</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-menu-container">
+        <label for="menu-checkbox" class="menu-label"
+          ><iconify-icon
+            icon="tabler:menu-deep"
+            class="menu-icon"
+          ></iconify-icon
+        ></label>
+
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+      </div>
+    </header>
+
     <!-- MAIN SECTION -->
     <main>
-      <h1 class="post-page-header">POST HEADING HERE**</h1>
+      <h1 class="specific-main-heading main-heading">POST HEADING HERE**</h1>
 
-      <section class="post-content-container">
-        <div class="prev-date-next-bar">
-          <a href="#" class="prev-date-next-item">PREVIOUS POST</a>
+      <!-- POST CONTENT -->
 
-          <h4 class="prev-date-next-item">
+      <section class="specific-content-container bs br">
+        <!-- POST META BAR -->
+
+        <div class="specific-meta-bar">
+          <a href="#" class="specific-meta-item meta-nav txt"
+            >< PREVIOUS POST</a
+          >
+
+          <h4 class="specific-meta-item txt">
             POSTED: <span class="posted-date">POSTED DATE HERE**</span>
           </h4>
 
-          <a href="#" class="prev-date-next-item">NEXT POST</a>
+          <a href="#" class="specific-meta-item meta-nav txt">NEXT POST ></a>
         </div>
 
-        <img src="" alt="post-image**" />
+        <!-- POST IMAGE -->
 
-        <div class="post-paragraphs-container">POST PARAGRAPHS HERE**</div>
+        <img
+          src="/resources/Espresso-main.jpg"
+          alt="post-image**"
+          class="specific-img"
+        />
+
+        <!-- POST TEXT -->
+
+        <div class="specific-txt-container">
+          <p class="specific-paragraph txt">
+            Enter the bold and concentrated universe of Espresso, where a single
+            shot packs a punch of intense flavor. As a coffee and tea
+            enthusiast, I'm eager to delve into the world of Espresso, a
+            beverage that is not just a quick caffeine fix but a nuanced and
+            exhilarating experience for the true coffee connoisseur.
+          </p>
+
+          <p class="specific-paragraph txt">
+            Espresso, a powerhouse of flavor in a concentrated form. This
+            Italian creation captures the purest essence of coffee, delivering a
+            robust and intense experience. As a coffee enthusiast, I appreciate
+            the immediacy of the flavor explosion – a symphony of rich, aromatic
+            notes that dance on the palate. It's not just a drink; it's a ritual
+            that pays homage to the soul of coffee.
+          </p>
+
+          <p class="specific-paragraph txt">
+            Mastering the art of Espresso demands precision. Start with
+            high-quality, finely ground coffee beans and ensure a consistent,
+            fine grind. Tamp the coffee grounds firmly, creating a compact puck.
+            Extract the espresso under high pressure, producing a small but
+            potent shot. The result is a liquid concentration of coffee
+            perfection. Sip slowly, savoring the intensity that only Espresso
+            can deliver.
+          </p>
+
+          <p class="specific-paragraph txt">
+            May the robust essence of Espresso linger on your palate, leaving
+            you invigorated and satisfied. Whether sipped solo for a jolt of
+            energy or used as the foundation for various coffee creations,
+            Espresso invites you to embrace the concentrated beauty and
+            complexity of coffee in every single shot.
+          </p>
+        </div>
+        <div class="specific-category-container txt">
+          Category: <span class="specific-category"> Coffee types</span>
+        </div>
       </section>
 
-      <!-- READ COMMENTS SECTION -->
+      <!-- COMMENTS SECTION -->
 
-      <section class="comments-section">
-        <h2 class="comments-heading">Comments</h2>
+      <section class="posted-comments-section">
+        <h2 class="posted-comments-heading section-heading bs br">Comments</h2>
 
-        <div class="user-comments-container">
-          COMMENT DIVS WITH PARAGRAPHS HERE**
+        <div class="posted-comments-card bs br">
+          <div class="posted-comments-meta-bar">
+            <p class="comment-author txt">Coffee Annan</p>
+            <p class="comment-date txt">24.12.2027</p>
+          </div>
+
+          <div class="posted-comment-txt txt">
+            <p>
+              This brew is simply amazing! The rich aroma and robust flavor
+              profile make it a perfect companion for my mornings. Can't wait to
+              explore more coffee recommendations from fellow enthusiasts!
+            </p>
+          </div>
+        </div>
+
+        <div class="posted-comments-card bs br">
+          <div class="posted-comments-meta-bar">
+            <p class="comment-author txt">Frieman Herle</p>
+            <p class="comment-date txt">22.12.2027</p>
+          </div>
+
+          <div class="posted-comment-txt txt">
+            <p>
+              Wow, what a fantastic post! I never knew the art of coffee could
+              be so captivating. Your insights on different brewing techniques
+              have inspired me to experiment more with my own coffee rituals.
+              Thanks for sharing this caffeinated journey
+            </p>
+          </div>
+        </div>
+
+        <div class="posted-comments-card bs br">
+          <div class="posted-comments-meta-bar">
+            <p class="comment-author txt">Amy Ricano</p>
+            <p class="comment-date txt">19.12.2027</p>
+          </div>
+
+          <div class="posted-comment-txt txt">
+            <p>
+              I resonate so much with your coffee experiences. The way you
+              describe the subtle notes and unique characteristics of each cup
+              is truly delightful.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- COMMENT FORM SECTION -->
 
       <section class="comment-form-container">
-        <h2 class="leave-comment-heading">Leave a comment</h2>
+        <h2 class="comment-form-heading section-heading">Leave a comment</h2>
 
         <form action="WORDPRESS COMMENT ENPOINT HERE**" class="comment-form">
-          <label for="comment-name" class="comment-label">Name</label>
-          <input
-            type="text"
-            id="comment-name"
-            name="comment-name"
-            placeholder="Starsky Bucksfield"
-            class="comment-input"
-          />
+          <!-- Name input -->
 
-          <label for="comment-email" class="comment-label">Email</label>
-          <input
-            type="text"
-            name="comment-email"
-            id="comment-email"
-            placeholder="starskybuck@example.com"
-            class="comment-input"
-          />
+          <div class="comment-name-container contact-input-container">
+            <div class="contact-feedback"></div>
+            <label for="comment-name" class="txt contact-label">Name*</label>
+            <input
+              type="text"
+              id="comment-name"
+              class="contact-input bs br"
+              placeholder="Starsky Bucksfield"
+            />
+          </div>
 
-          <textarea
-            name="comment-text"
-            id="comment-text"
-            cols="30"
-            rows="10"
-            placeholder="Your message.."
-          ></textarea>
+          <!-- Email input -->
+
+          <div class="contact-email-container contact-input-container">
+            <div class="contact-feedback"></div>
+            <label for="contact-email" class="txt contact-label">Email*</label>
+            <input
+              type="email"
+              name="contact-email"
+              id="contact-email"
+              class="contact-input bs br"
+              placeholder="starskybuck@example.com"
+            />
+          </div>
+
+          <!-- Message textarea -->
+
+          <div class="contact-message-container contact-input-container">
+            <div class="contact-feedback"></div>
+            <label for="contact-textarea" class="txt contact-label"
+              >Message*
+            </label>
+            <textarea
+              name="contact-textarea"
+              id="contact-textarea"
+              class="contact-input bs br"
+              cols="30"
+              rows="10"
+              placeholder="Your message.."
+            ></textarea>
+          </div>
+
+          <div class="comment-btn-container">
+            <button class="comment-btn btn">Post</button>
+          </div>
         </form>
-
-        <button class="comment-submit-btn">Post</button>
       </section>
+    </main>
 
+    <!-- FOOTER -->
+
+    <footer>
       <!-- NEWSLETTER SECTION -->
 
       <section class="newsletter-section">
         <div class="newsletter-txt">
-          <h3 class="newsletter-main-heading">Subscribe to my newsletter</h3>
+          <h3 class="newsletter-main-heading section-heading">
+            Subscribe to my newsletter
+          </h3>
 
-          <h4 class="newsletter-sec-heading">
+          <p class="newsletter-sec-heading txt">
             Stay up to date with the latest reveries
-          </h4>
+          </p>
         </div>
 
         <div class="newsletter-form-container">
-          <div class="form-feedback">FORM FEEDBACK HERE**</div>
+          <div class="newsletter-form-feedback">FORM FEEDBACK HERE**</div>
 
-          <input
-            type="text"
-            class="newsletter-input-field"
-            id="newsletter-input-field"
-            placeholder="example@email.com"
-          />
+          <form action="#" method="post" class="newsletter-form">
+            <input
+              type="text"
+              class="newsletter-input bs br"
+              id="newsletter-input"
+              placeholder="example@email.com"
+            />
 
-          <button class="newsletter-btn">Subscribe</button>
+            <button class="newsletter-btn btn bs">Subscribe</button>
+          </form>
         </div>
       </section>
 
-      <!-- FOOTER -->
+      <section class="footer-links">
+        <div class="footer-logo">
+          <a href="#" class="logo_large"
+            ><img src="resources/logos/logo-small.png" alt="logo"
+          /></a>
+        </div>
 
-      <footer></footer>
-    </main>
+        <ul class="footer-nav-list">
+          <li class="footer-link">Home</li>
+          <li class="footer-link">Posts</li>
+          <li class="footer-link">About</li>
+          <li class="footer-link">Contact</li>
+        </ul>
+
+        <div class="footer-social-icons">
+          <a href="#" class="footer-social-icon">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="#" class="footer-social-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="footer-social-icon">
+            <i class="fa-brands fa-snapchat"></i>
+          </a>
+        </div>
+      </section>
+
+      <p class="copyright-txt">&copy Copyright Roasted Reverie</p>
+    </footer>
   </body>
 </html>

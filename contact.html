@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!-- HEADER -->
 
@@ -48,48 +49,90 @@
     </header>
 
     <!-- MAIN SECTION -->
+
     <main>
+      <h1 class="main-heading contact-main-heading">Contact</h1>
+
       <!-- CONTACT FORM -->
-      <section class="contact-form-section">
-        <img src="#" alt="CONTACT ALT TXT HERE**" />
+
+      <section class="contact-form-section bs br">
+        <!-- Contact image  -->
+
+        <div class="contact-img"></div>
 
         <form action="WORDPRESS CONTACT ENDPOINT HERE**" class="contact-form">
-          <p class="contact-txt">
-            I would love to hear from you:) Fill out the form below and I will
-            get back to you shortly
+          <!-- Contact text -->
+
+          <p class="contact-txt txt">
+            I'd love to hear from you! Fill out the form below and I will get
+            back to you :)
           </p>
 
-          <label for="contact-name">Name</label>
-          <input
-            type="text"
-            id="contact-name"
-            placeholder="Starsky Bucksfield"
-          />
+          <!-- Name input -->
 
-          <label for="contact-email">Email</label>
-          <input
-            type="email"
-            name="contact-email"
-            id="contact-email"
-            placeholder="starskybuck@example.com"
-          />
+          <div class="contact-name-container contact-input-container">
+            <div class="contact-feedback"></div>
+            <label for="contact-name" class="txt contact-label">Name*</label>
+            <input
+              type="text"
+              id="contact-name"
+              class="contact-input br"
+              placeholder="Starsky Bucksfield"
+            />
+          </div>
 
-          <input
-            type="text"
-            name="contact-subject"
-            id="contact-subject"
-            placeholder="I love coffee too!"
-          />
+          <!-- Email input -->
 
-          <textarea
-            name="contact-textarea"
-            id="contact-textarea"
-            cols="30"
-            rows="10"
-            placeholder="Your message.."
-          ></textarea>
+          <div class="contact-email-container contact-input-container">
+            <div class="contact-feedback"></div>
+            <label for="contact-email" class="txt contact-label">Email*</label>
+            <input
+              type="email"
+              name="contact-email"
+              id="contact-email"
+              class="contact-input br"
+              placeholder="starskybuck@example.com"
+            />
+          </div>
 
-          <button class="contact-submit-btn">Send</button>
+          <!-- Subject input  -->
+
+          <div class="contact-subject-container contact-input-container">
+            <div class="contact-feedback"></div>
+            <label for="contact-subject" class="txt contact-label"
+              >Subject*</label
+            >
+            <input
+              type="text"
+              name="contact-subject"
+              id="contact-subject"
+              class="contact-input br"
+              placeholder="I love coffee too!"
+            />
+          </div>
+
+          <!-- Message textarea -->
+
+          <div class="contact-message-container contact-input-container">
+            <div class="contact-feedback"></div>
+            <label for="contact-textarea" class="txt contact-label"
+              >Message*</label
+            >
+            <textarea
+              name="contact-textarea"
+              id="contact-textarea"
+              class="contact-input br"
+              cols="30"
+              rows="10"
+              placeholder="Your message.."
+            ></textarea>
+          </div>
+
+          <!-- Submit button -->
+
+          <div class="contact-btn-container">
+            <button class="contact-btn btn">Send</button>
+          </div>
         </form>
       </section>
     </main>
