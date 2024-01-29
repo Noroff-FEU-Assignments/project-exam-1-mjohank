@@ -337,6 +337,11 @@ footer {
   box-shadow: 5px 5px 23px rgba(132, 125, 122, 0.4);
 }
 
+.btn:active {
+  background-color: var(--clr-white-background);
+  box-shadow: 5px 5px 23px rgba(132, 125, 122, 0.4);
+}
+
 /****************************************************************************/
 /* PAGE SPECIFIC STYLING */
 /****************************************************************************/

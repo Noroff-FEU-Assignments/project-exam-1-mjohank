@@ -2,7 +2,10 @@
 export const baseURL = "https://roasted-reverie.mjohank.no/wp-json/wp/v2/";
 
 //ACF QUERY PARAMETER
-export const acfFormat = "?acf_format=standard&per_page=25";
+export const acfFormat = "?acf_format=standard";
+
+//PAGINATION
+export const pagination = "&per_page=9";
 
 //ALL PAGES ENDPOINT
 export const allPagesEndpoint = "pages/";
@@ -16,8 +19,8 @@ const quotesPageEndpoint = "170";
 export const quotesPageURL = baseURL + allPagesEndpoint + quotesPageEndpoint;
 
 // POSTS ENDPOINT
-const postsEndpoint = "posts/";
-export const postsURL = baseURL + postsEndpoint + acfFormat;
+export const postsEndpoint = "posts/";
+export const postsURL = baseURL + postsEndpoint + acfFormat + pagination;
 
 // POST COMMENTS ENDPOINT
 const commentsEndpoint = "comments/";

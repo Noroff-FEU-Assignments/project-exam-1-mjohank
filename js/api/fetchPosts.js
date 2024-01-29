@@ -1,15 +1,21 @@
-import { postsURL } from "../utility-scripts/constants.js";
-import { acfFormat } from "../utility-scripts/constants.js";
+//IMPORTS
+import {
+  baseURL,
+  postsEndpoint,
+  acfFormat,
+  pagination,
+} from "../utility-scripts/constants.js";
 
-//
-export async function fetchPosts() {
+//FUNCTION TO FETCH POSTS
+export async function fetchPosts(page = 1) {
   try {
-    const response = await fetch(postsURL);
+    const response = await fetch(
+      `${baseURL}${postsEndpoint}${acfFormat}${pagination}&page=${page}`
+    );
     const postsJSON = await response.json();
-    // console.log(postsJSON);
     return postsJSON;
   } catch (error) {
-    console.log("The following error occured: " + error);
+    console.error("Error fetching posts: ", error);
     throw error;
   }
 }

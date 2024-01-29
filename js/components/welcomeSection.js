@@ -16,7 +16,7 @@ function createWelcomeContent(homeJSON) {
           <p class="welcome-txt txt">${homeJSON.acf.homepage_profile_text}</p>
 
           <div class="btn-container rm-btn-cont">
-            <a href="about.html" class="read-more-btn btn bs br">Read more></a>
+            <a href="about.html" class="read-more-btn btn bs br">Read more ></a>
           </div>
         </div>
       
