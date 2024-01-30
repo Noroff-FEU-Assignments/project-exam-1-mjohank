@@ -210,12 +210,6 @@ footer {
   gap: 0.5rem;
 }
 
-.newsletter-form-feedback {
-  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  margin: 0 auto;
-  display: none;
-}
-
 .newsletter-form {
   display: flex;
   gap: 1rem;
@@ -416,7 +410,7 @@ footer {
 }
 
 .next-arrow:hover {
-  transform: translateX(-5px);
+  transform: translateX(5px);
 }
 /***** Welcome Section *****/
 
