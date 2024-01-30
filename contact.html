@@ -30,10 +30,10 @@
       </div>
 
       <nav>
-        <a href="index.html" class="current-page">Home</a>
+        <a href="index.html">Home</a>
         <a href="posts.html">Posts</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="current-page">Contact</a>
       </nav>
 
       <div class="nav-menu-container">
@@ -60,7 +60,7 @@
 
         <div class="contact-img"></div>
 
-        <form action="WORDPRESS CONTACT ENDPOINT HERE**" class="contact-form">
+        <form action="#" class="contact-form" novalidate>
           <!-- Contact text -->
 
           <p class="contact-txt txt">
@@ -71,8 +71,9 @@
           <!-- Name input -->
 
           <div class="contact-name-container contact-input-container">
-            <div class="contact-feedback"></div>
-            <label for="contact-name" class="txt contact-label">Name*</label>
+            <label for="contact-name" class="txt contact-label"
+              >Name* <span class="contact-name-feedback"></span
+            ></label>
             <input
               type="text"
               id="contact-name"
@@ -84,8 +85,9 @@
           <!-- Email input -->
 
           <div class="contact-email-container contact-input-container">
-            <div class="contact-feedback"></div>
-            <label for="contact-email" class="txt contact-label">Email*</label>
+            <label for="contact-email" class="txt contact-label"
+              >Email* <span class="contact-email-feedback"></span
+            ></label>
             <input
               type="email"
               name="contact-email"
@@ -98,10 +100,9 @@
           <!-- Subject input  -->
 
           <div class="contact-subject-container contact-input-container">
-            <div class="contact-feedback"></div>
             <label for="contact-subject" class="txt contact-label"
-              >Subject*</label
-            >
+              >Subject* <span class="contact-subject-feedback"></span
+            ></label>
             <input
               type="text"
               name="contact-subject"
@@ -114,10 +115,9 @@
           <!-- Message textarea -->
 
           <div class="contact-message-container contact-input-container">
-            <div class="contact-feedback"></div>
             <label for="contact-textarea" class="txt contact-label"
-              >Message*</label
-            >
+              >Message* <span class="contact-message-feedback"></span
+            ></label>
             <textarea
               name="contact-textarea"
               id="contact-textarea"
@@ -198,5 +198,6 @@
 
       <p class="copyright-txt">&copy Copyright Roasted Reverie</p>
     </footer>
+    <script src="js/components/contactForm.js" type="module"></script>
   </body>
 </html>
