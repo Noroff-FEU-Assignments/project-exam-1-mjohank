@@ -304,6 +304,32 @@ footer {
   /* font-weight: var(--fw-semibold); */
 }
 
+.form-success {
+  color: green;
+}
+
+.form-error {
+  color: darkred;
+  padding: 0 0.3rem;
+  border-radius: var(--br-main);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.error-triangle {
+  animation: pulse 1s infinite;
+}
+
 /* BOX SHADOW */
 .bs {
   box-shadow: var(--bs-main);
@@ -586,7 +612,7 @@ footer {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 2rem;
+  gap: 1.75rem;
   padding: 2rem;
 }
 
@@ -616,6 +642,24 @@ footer {
 
 .contact-message-container {
   margin-bottom: var(--mb-small);
+}
+
+.contact-form-feedback {
+  text-align: center;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.contact-finger-up {
+  animation: moveUpDown 1s infinite;
 }
 
 .contact-btn-container {
