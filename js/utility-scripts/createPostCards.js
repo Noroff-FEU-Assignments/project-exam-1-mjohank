@@ -1,11 +1,10 @@
+//IMPORTS
+import { formatPostDate } from "./dateFormatter.js";
+
+//CREATING BLOG POST CARDS
 export function createPostCards(posts, container) {
   posts.forEach((post) => {
-    const date = new Date(post.date);
-    const formattedDate = date.toLocaleDateString(undefined, {
-      day: "2-digit",
-      month: "2-digit",
-      year: "2-digit",
-    });
+    const formattedDate = formatPostDate(post.date);
 
     const postCardHTML = `
       <a href="post-specific.html?id=${post.id}" class="post-card slide bs br">

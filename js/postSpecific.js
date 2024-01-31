@@ -4,6 +4,7 @@ import {
   baseURL,
   postsEndpoint,
 } from "./utility-scripts/constants.js";
+import { formatPostDate } from "./utility-scripts/dateFormatter.js";
 
 //API RELATED CONSTANTS
 const queryString = document.location.search;
@@ -26,10 +27,12 @@ async function displaySpecificPost() {
     //CREATING PAGE H1
     specificMainHeading.textContent = specificJSON.title.rendered;
 
+    const formattedDate = formatPostDate(specificJSON.date);
+
     const specificPostHTML = `
     <div class="specific-meta-bar">
       <a href="#" class="specific-meta-item meta-nav txt">  < PREVIOUS POST</a>
-      <h4 class="specific-meta-item txt">POSTED: <span class="posted-date">${specificJSON.date}</span></h4>
+      <h4 class="specific-meta-item txt">POSTED: <span class="posted-date">${formattedDate}</span></h4>
       <a href="#" class="specific-meta-item meta-nav txt">NEXT POST ></a>
     </div>
 
