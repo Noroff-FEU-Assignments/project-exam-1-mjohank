@@ -152,23 +152,24 @@
             Subscribe to my newsletter
           </h3>
 
-          <p class="newsletter-sec-heading txt">
+          <p class="newsletter-info txt">
             Stay up to date with the latest reveries
           </p>
         </div>
 
         <div class="newsletter-form-container">
-          <div class="newsletter-form-feedback">FORM FEEDBACK HERE**</div>
-
-          <form action="#" method="post" class="newsletter-form">
+          <form action="#" method="post" novalidate class="newsletter-form">
             <input
-              type="text"
+              type="email"
+              name="email"
               class="newsletter-input bs br"
               id="newsletter-input"
               placeholder="example@email.com"
             />
 
-            <button class="newsletter-btn btn bs">Subscribe</button>
+            <button type="submit" class="newsletter-btn btn bs">
+              Subscribe
+            </button>
           </form>
         </div>
       </section>
@@ -202,6 +203,9 @@
 
       <p class="copyright-txt">&copy Copyright Roasted Reverie</p>
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/components/NewsletterForm.js" type="module"></script>
     <script src="js/components/contactForm.js" type="module"></script>
   </body>
 </html>
