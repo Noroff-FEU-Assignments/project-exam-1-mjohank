@@ -17,6 +17,8 @@ async function fetchAndDisplayPosts() {
     if (posts.length < 9) {
       viewMoreBtn.textContent = "End of Content";
       viewMoreBtn.disabled = true;
+      viewMoreBtn.style.border = "2px solid var(--clr-main-acc)";
+      viewMoreBtn.style.backgroundColor = "var(--clr-sec-background)";
     }
   } catch (error) {
     console.error("Error fetching and displaying posts: ", error);
