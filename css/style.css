@@ -557,8 +557,9 @@ footer {
   background-image: url(/resources/About-image_2.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 50%;
-  height: 350px;
+  height: 400px;
 }
 
 .about-img-1 {
