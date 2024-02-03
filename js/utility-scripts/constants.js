@@ -1,3 +1,7 @@
+//
+//
+//API RELATED CONSTANTS
+
 //BASE URL
 export const baseURL = "https://roasted-reverie.mjohank.no/wp-json/wp/v2/";
 
@@ -25,3 +29,10 @@ export const postsURL = baseURL + postsEndpoint + acfFormat + pagination;
 // POST COMMENTS
 const commentsEndpoint = "comments/";
 export const commentsURL = baseURL + commentsEndpoint;
+
+////////////////
+
+//OTHER CONSTANTS
+
+// BLOG POST CARDS
+export const allCards = document.querySelectorAll(".post-card");

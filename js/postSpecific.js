@@ -22,7 +22,10 @@ async function displaySpecificPost() {
   try {
     const response = await fetch(specificPostURL);
     const specificJSON = await response.json();
-    console.log(specificJSON);
+    // console.log(specificJSON);
+
+    //Update page title
+    document.title = `${specificJSON.title.rendered} | Roasted Reverie`;
 
     //CREATING PAGE H1
     specificMainHeading.textContent = specificJSON.title.rendered;

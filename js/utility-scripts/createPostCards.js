@@ -7,7 +7,8 @@ export function createPostCards(posts, container) {
     const formattedDate = formatPostDate(post.date);
 
     const postCardHTML = `
-      <a href="post-specific.html?id=${post.id}" class="post-card slide bs br">
+      <div class="post-card-container bs br">
+        <a href="post-specific.html?id=${post.id}" class="post-card slide">
 
         <img src="${post.acf.post_thumbnail_image}" alt="${post.acf.post_paragraph_6}" class="post-card-img"/>
 
@@ -17,7 +18,8 @@ export function createPostCards(posts, container) {
           <p class="posted-date txt">Posted: ${formattedDate}</p>
             
         </div>
-      </a>
+        </a>
+      </div>
     `;
 
     container.innerHTML += postCardHTML;

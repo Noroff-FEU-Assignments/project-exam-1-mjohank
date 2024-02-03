@@ -1,11 +1,13 @@
+//
+//
 // IMPORTS
 
-import { fetchAndDisplayRandomQuote } from "./components/quotesSection.js";
-import { fetchAndDisplayLatestPosts } from "./components/latestPostsCarousel.js";
 import { fetchAndDisplayHeroContent } from "./components/heroSection.js";
+import { fetchAndDisplayCarouselSlides } from "./components/latestPostsCarousel.js";
+import { fetchAndDisplayRandomQuote } from "./components/quotesSection.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetchAndDisplayRandomQuote();
-  fetchAndDisplayLatestPosts();
   fetchAndDisplayHeroContent();
+  fetchAndDisplayCarouselSlides();
+  fetchAndDisplayRandomQuote();
 });

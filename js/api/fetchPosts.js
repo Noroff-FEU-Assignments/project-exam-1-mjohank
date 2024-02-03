@@ -13,7 +13,7 @@ export async function fetchPosts(page = 1) {
       `${baseURL}${postsEndpoint}${acfFormat}${pagination}&page=${page}`
     );
     const postsJSON = await response.json();
-    console.log(postsJSON);
+    // console.log(postsJSON);
     return postsJSON;
   } catch (error) {
     console.error("Error fetching posts: ", error);

@@ -1,19 +1,21 @@
+//IMPORTS
 import { fetchPosts } from "./api/fetchPosts.js";
 import { createPostCards } from "./utility-scripts/createPostCards.js";
 import { baseURL, acfFormat, pagination } from "./utility-scripts/constants.js";
 
+//CONSTANTS
 const bloglistContainer = document.querySelector(".bloglist-container");
 const viewMoreBtn = document.querySelector(".view-more-btn");
 
 let page = 1; // Initial page
 
-// Function to fetch and display posts
+// FUNCTION TO FETCH AND DISPLAY POSTS AS CARDS IN SETS OF 9
 async function fetchAndDisplayPosts() {
   try {
     const posts = await fetchPosts(page);
     createPostCards(posts, bloglistContainer);
 
-    // Check if there are more posts
+    // Check if there are more posts, if not inform user
     if (posts.length < 9) {
       viewMoreBtn.textContent = "End of Content";
       viewMoreBtn.disabled = true;
