@@ -276,8 +276,6 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 350px;
-  /* overflow: hidden; */
-  /* transition: transform 0.2s ease-in-out; */
 }
 
 .post-card-img {
@@ -294,6 +292,9 @@ footer {
   padding: 1rem;
   width: 100%;
   background-color: var(--clr-white-background);
+  /* Pushing the text content back towards the center of the card. */
+  /* The content was likely moved to the right due to some javascript*/
+  padding-right: 3.5rem;
 }
 
 .post-card-heading {
@@ -312,7 +313,6 @@ footer {
 .category-date-container {
   display: flex;
   justify-content: space-between;
-  /* font-weight: var(--fw-semibold); */
 }
 
 /* FORM FEEDBACK */
