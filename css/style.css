@@ -579,15 +579,15 @@ footer {
   width: 100%;
   background-color: var(--clr-white-background);
   padding: 1rem;
+  min-width: 350px;
 }
 
 .about-main-txt-container,
 .about-outro-txt-container {
   display: flex;
-  flex-wrap: wrap;
   overflow: hidden;
   background-color: var(--clr-white-background);
-  min-width: 400px;
+  min-width: 350px;
 }
 
 .about-img-1,
