@@ -68,6 +68,12 @@
 @media only screen and (max-width: 768px) {
   /* MAIN NAVIGATION */
 
+  header {
+    position: relative;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   nav {
     display: block;
     max-height: 0;
@@ -92,23 +98,26 @@
 
   .nav-list {
     flex-direction: column;
-    padding: 2rem 0;
-  }
-
-  header {
-    position: relative;
-    flex-direction: column;
-    gap: 2rem;
+    /* padding: 2rem 0; */
+    gap: 0;
+    align-items: center;
   }
 
   .nav-list li {
     text-align: center;
-    line-height: 2;
+    width: 100%;
+    border-bottom: 2px solid var(--clr-main-txt);
   }
 
   .nav-list li a {
-    width: 100%;
     display: block;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .nav-list li a:hover {
+    color: white;
+    background-color: var(--clr-main-txt);
   }
 
   /* FOOTER */
