@@ -69,7 +69,16 @@
   /* MAIN NAVIGATION */
 
   nav {
-    display: none;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.15s ease-out;
+    background-color: var(--clr-sec-background);
+    position: absolute;
+    top: 175px;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
 
   .menu-icon {
@@ -78,17 +87,11 @@
   }
 
   #menu-checkbox:checked ~ nav {
-    display: block;
+    max-height: 500px;
   }
 
   .nav-list {
     flex-direction: column;
-    width: 100%;
-    background-color: var(--clr-sec-background);
-    position: absolute;
-    top: 175px;
-    left: 0;
-    text-align: center;
     padding: 2rem 0;
   }
 
