@@ -661,6 +661,8 @@ footer {
   margin-top: var(--mt-main);
   margin-bottom: 1rem;
   font-weight: var(--fw-semibold);
+  width: 100%;
+  padding: 0.7rem;
 }
 
 .contact-input-container {
@@ -725,7 +727,7 @@ footer {
 .specific-content-container {
   display: flex;
   flex-direction: column;
-  max-width: 75rem;
+  max-width: 50rem;
   background-color: var(--clr-white-background);
   margin: 0 auto;
   margin-bottom: var(--mb-main);
@@ -757,11 +759,19 @@ footer {
 .close-modal {
   position: absolute;
   top: 0;
-  right: 15px;
-  font-size: 40px;
-  font-weight: bold;
+  right: 25px;
+  font-size: 60px;
   color: #fff;
   cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.close-modal:hover {
+  transform: scale(1.5);
+}
+
+.close-modal:active {
+  transform: rotate(90deg);
 }
 
 .specific-meta-bar {
@@ -785,6 +795,7 @@ footer {
 
 .specific-img {
   width: 100%;
+  cursor: pointer;
 }
 
 .specific-txt-container {
