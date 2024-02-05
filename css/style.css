@@ -80,7 +80,6 @@ body {
 
 /* HEADER */
 header {
-  background-color: var(--clr-sec-background);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,6 +87,7 @@ header {
   position: sticky;
   z-index: 99;
   top: 0;
+  background-color: var(--clr-sec-background);
 }
 
 .nav-list {
@@ -120,7 +120,6 @@ header {
 .menu-icon {
   color: var(--clr-main-txt);
   font-size: 2.5rem;
-  margin-right: 1rem;
   display: none;
 }
 
@@ -394,10 +393,11 @@ footer {
   justify-content: left;
   align-items: center;
   margin-bottom: var(--mb-main);
+  top: 350px;
 }
 
 .homepage-main-heading {
-  margin-left: 3rem;
+  margin-left: 10%;
 }
 
 /***** Latest Posts Section *****/

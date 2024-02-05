@@ -14,6 +14,11 @@
     align-items: center;
   }
 
+  .homepage-main-heading {
+    font-size: 1.2rem;
+    margin: 3rem auto;
+  }
+
   .carousel-container {
     max-width: calc((350px * 2) + 1rem); /* Adjust the number of cards shown */
   }
@@ -70,21 +75,24 @@
 
   header {
     position: relative;
-    flex-direction: column;
-    gap: 2rem;
+    justify-content: space-between;
   }
 
   nav {
     display: block;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.15s ease-out;
-    background-color: var(--clr-sec-background);
-    position: absolute;
-    top: 175px;
+    top: 103px;
     left: 0;
     width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
     text-align: center;
+    transition: max-height 0.15s ease-out;
+    background-color: var(--clr-sec-background);
+  }
+
+  .nav-list-centering {
+    display: none;
   }
 
   .menu-icon {
@@ -114,7 +122,9 @@
     padding: 2rem;
   }
 
-  .nav-list li a:hover {
+  /* Active takes effect on touch devices */
+  .nav-list li a:hover,
+  .nav-list li a:active {
     color: white;
     background-color: var(--clr-main-txt);
   }
@@ -150,6 +160,9 @@
 
   /* HOMEPAGE */
 
+  .homepage-main-heading {
+  }
+
   .carousel-container {
     max-width: 350px; /* Adjust the number of cards shown */
   }
@@ -164,6 +177,12 @@
 
   .welcome-section {
     width: 100%;
+  }
+
+  /* Quote Section */
+
+  .quote-txt {
+    font-size: var(--f-size-h4);
   }
 
   /* POSTS PAGE */
