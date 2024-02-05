@@ -98,7 +98,6 @@
 
   .nav-list {
     flex-direction: column;
-    /* padding: 2rem 0; */
     gap: 0;
     align-items: center;
   }
@@ -106,7 +105,7 @@
   .nav-list li {
     text-align: center;
     width: 100%;
-    border-bottom: 2px solid var(--clr-main-txt);
+    border-bottom: 1px solid var(--clr-main-txt);
   }
 
   .nav-list li a {
@@ -118,6 +117,10 @@
   .nav-list li a:hover {
     color: white;
     background-color: var(--clr-main-txt);
+  }
+
+  .current-page {
+    background-color: #d4ba9f;
   }
 
   /* FOOTER */
