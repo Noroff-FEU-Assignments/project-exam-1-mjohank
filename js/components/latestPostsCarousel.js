@@ -3,6 +3,7 @@
 // IMPORTS
 import { fetchPosts } from "../api/fetchPosts.js";
 import { createPostCards } from "../utility-scripts/createPostCards.js";
+import { errorMessage } from "./errorMessage.js";
 
 //CONSTANTS
 const carousel = document.querySelector(".track");
@@ -12,6 +13,7 @@ let cardWidth = 366;
 let cardsToShow = calculateCardsToShow();
 let currentSet = 0;
 const totalCards = 9;
+const latestPostsSection = document.querySelector(".latest-posts-section");
 
 //CALCULATING THE NUMBER OF CARDS TO SHOW, BASED ON VIEWPORT WIDTH
 function calculateCardsToShow() {
@@ -40,7 +42,9 @@ async function fetchAndDisplayCarouselSlides() {
 
     createPostCards(allSlides, carousel);
   } catch (error) {
-    console.log("Følgende feil gjelder; ", error);
+    latestPostsSection.innerHTML = errorMessage(
+      "An error occurred while fetching the posts:"
+    );
   }
 }
 

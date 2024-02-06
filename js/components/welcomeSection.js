@@ -1,9 +1,14 @@
 //
 //
+//IMPORTS
+import { errorMessage } from "./errorMessage.js";
+//CONSTANTS
+const welcomeContainer = document.querySelector(".welcome-section");
+
 // CREATING THE WELCOME SECTION
 function createWelcomeContent(homeJSON) {
-  const welcomeContainer = document.querySelector(".welcome-section");
-  welcomeContainer.innerHTML = `
+  try {
+    welcomeContainer.innerHTML = `
     <img src="${homeJSON.acf.homepage_profile_image}" alt="image of author" class="author-img" />
     <div class="welcome-txt-container">
       <h2 class="section-heading">Welcome to my blog!</h2>
@@ -13,6 +18,11 @@ function createWelcomeContent(homeJSON) {
       </div>
     </div>
   `;
+  } catch (error) {
+    welcomeContainer.innerHTML = errorMessage(
+      "There was an error fetching welcome content from the API"
+    );
+  }
 }
 
 export { createWelcomeContent };

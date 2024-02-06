@@ -7,20 +7,23 @@ import { createWelcomeContent } from "./components/welcomeSection.js";
 import { fetchAndDisplayCarouselSlides } from "./components/latestPostsCarousel.js";
 import { fetchAndDisplayRandomQuote } from "./components/quotesSection.js";
 import { loader } from "./utility-scripts/constants.js";
+import { latestPostsSection } from "./utility-scripts/constants.js";
+import { errorMessage } from "./components/errorMessage.js";
 
 async function fetchHomePageContent() {
   try {
     const response = await fetch(homePageURL + acfFormat);
     const homeJSON = await response.json();
 
+    loader.innerHTML = "";
+
     createHeroContent(homeJSON);
     createWelcomeContent(homeJSON);
     fetchAndDisplayCarouselSlides();
     fetchAndDisplayRandomQuote();
-
-    loader.innerHTML = "";
   } catch (error) {
-    console.error("Error fetching home page content:", error);
+    latestPostsSection.innerHTML = errorMessage();
+    loader.innerHTML = "";
   }
 }
 

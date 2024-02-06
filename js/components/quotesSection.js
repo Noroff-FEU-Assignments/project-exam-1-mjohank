@@ -1,6 +1,11 @@
+//
+//
 //IMPORTS
-
 import { quotesPageURL } from "../utility-scripts/constants.js";
+import { errorMessage } from "./errorMessage.js";
+
+// CONSTANTS
+const quoteContainer = document.querySelector(".quote-section");
 
 // CREATING THE QUOTES SECTION
 
@@ -19,7 +24,9 @@ async function fetchAndDisplayRandomQuote() {
     // Display the quote in the specified container
     displayQuote(randomQuote);
   } catch (error) {
-    console.error("Error during fetchAndDisplayRandomQuote:", error);
+    quoteContainer.innerHTML = errorMessage(
+      "There was an error trying to fetch the quote from the API"
+    );
   }
 }
 
@@ -45,8 +52,6 @@ function getRandomQuote(quotes) {
 
 // FUNCTION TO DISPLAY QUOTE IN THE CONTAINER
 function displayQuote(quote) {
-  const quoteContainer = document.querySelector(".quote-section");
-
   // Check if the container exists
   if (quoteContainer) {
     // Create a paragraph element

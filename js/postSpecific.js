@@ -6,18 +6,19 @@ import {
 } from "./utility-scripts/constants.js";
 import { formatPostDate } from "./utility-scripts/dateFormatter.js";
 import { openModal } from "./components/modal.js";
+import { errorMessage } from "./components/errorMessage.js";
 
 //CONSTANTS
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const specificPostId = params.get("id");
 const specificPostURL = baseURL + postsEndpoint + specificPostId + acfFormat;
+const specificContentContainer = document.querySelector(
+  ".specific-content-container"
+);
 
 //FETCHING AND DISPLAYING POST CONTENT
 async function displaySpecificPost() {
-  const specificContentContainer = document.querySelector(
-    ".specific-content-container"
-  );
   const specificMainHeading = document.querySelector(".specific-main-heading");
 
   try {
@@ -68,7 +69,9 @@ async function displaySpecificPost() {
       openModal(specificJSON.acf.post_main_image);
     });
   } catch (error) {
-    console.log("ka faen? Nå fikk jeg opp dette: ", error);
+    specificContentContainer.innerHTML = errorMessage(
+      "There was an error fetching the post content from the API"
+    );
   }
 }
 

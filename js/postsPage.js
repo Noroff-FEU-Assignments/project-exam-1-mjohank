@@ -2,9 +2,15 @@
 //
 //IMPORTS
 import { fetchPosts } from "./api/fetchPosts.js";
+import { errorMessage } from "./components/errorMessage.js";
 import { createPostCards } from "./utility-scripts/createPostCards.js";
+import { loader } from "./utility-scripts/constants.js";
+
 //CONSTANTS
 const bloglistContainer = document.querySelector(".bloglist-container");
+const blogListErrorContainer = document.querySelector(
+  ".bloglist-error-container"
+);
 const viewMoreBtn = document.querySelector(".view-more-btn");
 
 let page = 1; // Initial page
@@ -25,6 +31,7 @@ async function fetchAndDisplayPosts() {
     }
 
     createPostCards(displayPosts, bloglistContainer);
+    loader.innerHTML = "";
 
     // Checking if there are more posts to be fetched, if not inform user
     if (posts.length < 9) {
@@ -34,7 +41,10 @@ async function fetchAndDisplayPosts() {
       viewMoreBtn.style.backgroundColor = "var(--clr-sec-background)";
     }
   } catch (error) {
-    console.error("Error fetching and displaying posts: ", error);
+    blogListErrorContainer.innerHTML = errorMessage(
+      "<p>There was an error fetching the posts from the API</p>"
+    );
+    loader.innerHTML = "";
   }
 }
 

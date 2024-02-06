@@ -40,3 +40,7 @@ export const allCards = document.querySelectorAll(".post-card");
 //LOADER
 
 export const loader = document.querySelector(".loader-container");
+
+export const latestPostsSection = document.querySelector(
+  ".latest-posts-section"
+);
