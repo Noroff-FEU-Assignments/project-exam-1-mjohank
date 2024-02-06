@@ -36,9 +36,12 @@ async function displaySpecificPost() {
     const specificPostHTML = `
     <article class="specific-post-article">
       <div class="specific-meta-bar">
-        <a href="#" class="specific-meta-item meta-nav txt">  < PREVIOUS POST</a>
+
+        <a href="posts.html" class="specific-meta-item meta-nav spec-meta-prev txt">  < Back</a>
+        
         <h4 class="specific-meta-item txt">POSTED: <span class="posted-date">${formattedDate}</span></h4>
-        <a href="#" class="specific-meta-item meta-nav txt">NEXT POST ></a>
+
+        <a href="#" class="specific-meta-item meta-nav spec-meta-next txt">NEXT POST ></a>
       </div>
 
       <img src="${specificJSON.acf.post_main_image}" alt="${specificJSON.acf.post_paragraph_6}" class="specific-img" />
@@ -47,8 +50,11 @@ async function displaySpecificPost() {
         <p class="specific-paragraph txt">${specificJSON.acf.post_paragraph_1}</p>        
         <p class="specific-paragraph txt">${specificJSON.acf.post_paragraph_2}</p>        
         <p class="specific-paragraph txt">${specificJSON.acf.post_paragraph_3}</p>        
-        <p class="specific-paragraph txt">${specificJSON.acf.post_paragraph_4}</p>        
+        <p class="specific-paragraph txt">${specificJSON.acf.post_paragraph_4}</p>
+        <a href="posts.html" class="spec-back-btn btn txt">Back to post list</a>
       </div>
+
+      
 
       
     </article>`;

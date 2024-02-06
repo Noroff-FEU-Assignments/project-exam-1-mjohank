@@ -36,3 +36,7 @@ export const commentsURL = baseURL + commentsEndpoint;
 
 // BLOG POST CARDS
 export const allCards = document.querySelectorAll(".post-card");
+
+//LOADER
+
+export const loader = document.querySelector(".loader-container");

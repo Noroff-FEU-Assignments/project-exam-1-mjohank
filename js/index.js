@@ -6,6 +6,7 @@ import { createHeroContent } from "./components/heroSection.js";
 import { createWelcomeContent } from "./components/welcomeSection.js";
 import { fetchAndDisplayCarouselSlides } from "./components/latestPostsCarousel.js";
 import { fetchAndDisplayRandomQuote } from "./components/quotesSection.js";
+import { loader } from "./utility-scripts/constants.js";
 
 async function fetchHomePageContent() {
   try {
@@ -16,6 +17,8 @@ async function fetchHomePageContent() {
     createWelcomeContent(homeJSON);
     fetchAndDisplayCarouselSlides();
     fetchAndDisplayRandomQuote();
+
+    loader.innerHTML = "";
   } catch (error) {
     console.error("Error fetching home page content:", error);
   }
