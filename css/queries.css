@@ -95,6 +95,11 @@
     display: none;
   }
 
+  .menu-icon,
+  .close-menu-icon {
+    font-size: 1.5rem;
+  }
+
   .menu-icon {
     display: block;
     cursor: pointer;
