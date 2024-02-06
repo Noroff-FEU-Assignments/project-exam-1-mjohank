@@ -18,7 +18,7 @@ const heroSection = document.querySelector(".homepage-hero-section");
 
 async function fetchHomePageContent() {
   try {
-    const response = await fetch(jalapeno);
+    const response = await fetch(homePageURL + acfFormat);
     const homeJSON = await response.json();
 
     loader.innerHTML = "";
