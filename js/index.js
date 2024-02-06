@@ -12,7 +12,7 @@ import { errorMessage } from "./components/errorMessage.js";
 
 async function fetchHomePageContent() {
   try {
-    const response = await fetch(homePageURL + acfFormat);
+    const response = await fetch(jalapeno);
     const homeJSON = await response.json();
 
     loader.innerHTML = "";
