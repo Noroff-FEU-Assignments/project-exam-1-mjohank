@@ -163,6 +163,14 @@ main {
   font-size: var(--f-size-body-medium);
 }
 
+.txt-light {
+  font-family: var(--ff-bodytext);
+  color: var(--clr-main-txt);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1rem;
+}
+
 /* LINKS */
 a:link,
 a:visited,
