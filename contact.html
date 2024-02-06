@@ -133,13 +133,16 @@
             <label for="contact-subject" class="txt contact-label"
               >Subject* <span class="contact-subject-feedback"></span
             ></label>
-            <input
-              type="text"
-              name="contact-subject"
-              id="contact-subject"
-              class="contact-input txt-light br"
-              placeholder="I love coffee too!"
-            />
+            <div class="subject-wrapper">
+              <input
+                type="text"
+                name="contact-subject"
+                id="contact-subject"
+                class="contact-input txt-light br"
+                placeholder="I love coffee too!"
+              />
+              <div class="sub-char-count txt-light">0/15</div>
+            </div>
           </div>
 
           <!-- Message textarea -->
@@ -148,14 +151,17 @@
             <label for="contact-textarea" class="txt contact-label"
               >Message* <span class="contact-message-feedback"></span
             ></label>
-            <textarea
-              name="contact-textarea"
-              id="contact-textarea"
-              class="contact-input txt-light br"
-              cols="30"
-              rows="10"
-              placeholder="Your message.."
-            ></textarea>
+            <div class="textarea-wrapper">
+              <textarea
+                name="contact-textarea"
+                id="contact-textarea"
+                class="contact-input txt-light br"
+                cols="30"
+                rows="10"
+                placeholder="Your message.."
+              ></textarea>
+              <div class="msg-char-count txt-light">0/25</div>
+            </div>
           </div>
 
           <!-- Form feedback -->
@@ -235,8 +241,10 @@
     </footer>
 
     <!-- SCRIPTS -->
+
     <script src="js/components/toggleMenu.js"></script>
     <script src="js/components/NewsletterForm.js" type="module"></script>
     <script src="js/components/contactForm.js" type="module"></script>
+    <script src="js/components/counter.js"></script>
   </body>
 </html>

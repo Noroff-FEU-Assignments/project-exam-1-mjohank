@@ -728,6 +728,18 @@ footer {
   margin-bottom: var(--mb-small);
 }
 
+.textarea-wrapper,
+.subject-wrapper {
+  position: relative;
+}
+
+.msg-char-count,
+.sub-char-count {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
 .contact-form-feedback {
   text-align: center;
 }
