@@ -109,7 +109,7 @@
       <section class="posted-comments-section">
         <h2 class="posted-comments-heading section-heading bs br">Comments</h2>
 
-        <div class="posted-comments-card bs br">
+        <!-- <div class="posted-comments-card bs br">
           <div class="posted-comments-meta-bar">
             <p class="comment-author txt">Coffee Annan</p>
             <p class="comment-date txt">24.12.2027</p>
@@ -153,7 +153,7 @@
               is truly delightful.
             </p>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <!-- COMMENT FORM SECTION -->
@@ -161,45 +161,48 @@
       <section class="comment-form-container">
         <h2 class="comment-form-heading section-heading">Leave a comment</h2>
 
-        <form action="WORDPRESS COMMENT ENPOINT HERE**" class="comment-form">
+        <form
+          action="https://roasted-reverie.mjohank.no//wp-json/wp/v2/comments"
+          class="comment-form"
+        >
           <!-- Name input -->
 
-          <div class="comment-name-container contact-input-container">
-            <div class="contact-feedback"></div>
-            <label for="comment-name" class="txt contact-label">Name*</label>
+          <div class="comment-name-container comment-input-container">
+            <div class="comment-feedback"></div>
+            <label for="comment-name" class="txt comment-label">Name*</label>
             <input
               type="text"
               id="comment-name"
-              class="contact-input bs br"
+              class="comment-input bs br"
               placeholder="Starsky Bucksfield"
             />
           </div>
 
           <!-- Email input -->
 
-          <div class="contact-email-container contact-input-container">
-            <div class="contact-feedback"></div>
-            <label for="contact-email" class="txt contact-label">Email*</label>
+          <div class="comment-email-container comment-input-container">
+            <div class="comment-feedback"></div>
+            <label for="comment-email" class="txt comment-label">Email*</label>
             <input
               type="email"
-              name="contact-email"
-              id="contact-email"
-              class="contact-input bs br"
+              name="comment-email"
+              id="comment-email"
+              class="comment-input bs br"
               placeholder="starskybuck@example.com"
             />
           </div>
 
           <!-- Message textarea -->
 
-          <div class="contact-message-container contact-input-container">
-            <div class="contact-feedback"></div>
-            <label for="contact-textarea" class="txt contact-label"
+          <div class="comment-message-container comment-input-container">
+            <div class="comment-feedback"></div>
+            <label for="comment-textarea" class="txt comment-label"
               >Message*
             </label>
             <textarea
-              name="contact-textarea"
-              id="contact-textarea"
-              class="contact-input bs br"
+              name="comment-textarea"
+              id="comment-textarea"
+              class="comment-input bs br"
               cols="30"
               rows="10"
               placeholder="Your message.."
