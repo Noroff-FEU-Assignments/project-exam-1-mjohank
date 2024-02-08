@@ -1,10 +1,10 @@
 //
 //
 //CONSTANTS
-const contactTextarea = document.getElementById("contact-textarea");
+const contactTextarea = document.getElementById("your-message");
 const messageCharCount = document.querySelector(".msg-char-count");
 
-const contactSubject = document.getElementById("contact-subject");
+const contactSubject = document.getElementById("your-subject");
 const subjectCharCount = document.querySelector(".sub-char-count");
 
 //FUNCTION TO COUNT CHARACTERS IN CONTACT FORM TEXTAREA
