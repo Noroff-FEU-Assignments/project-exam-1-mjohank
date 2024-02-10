@@ -74,15 +74,12 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   background-color: var(--clr-main-background);
-
-  /* overflow-x: hidden; */
 }
 
 /* LOADER */
 .loader-container {
   width: 120px;
   margin: 0 auto;
-  /* display: none; */
 }
 
 .loader {
@@ -129,7 +126,6 @@ header {
   align-items: center;
   gap: 4rem;
   text-align: center;
-  /* flex-grow: 1; */
   list-style: none;
 }
 
@@ -138,7 +134,6 @@ header {
   font-size: var(--f-size-h2);
   text-decoration: none;
   color: var(--clr-main-txt);
-  /* gap: 4rem; */
 }
 
 .nav-list a:hover {
@@ -223,7 +218,7 @@ footer {
   background-color: var(--clr-white-background);
 }
 
-/***** NEWSLETTER SECTION *****/
+/***** FOOTER NEWSLETTER SECTION *****/
 .newsletter-section {
   display: flex;
   flex-direction: column;
@@ -266,6 +261,8 @@ footer {
   width: 15rem;
 }
 
+/* FOOTER LINKS */
+
 .footer-links {
   display: flex;
   flex-direction: row;
@@ -301,7 +298,7 @@ footer {
   font-family: var(--ff-bodytext);
 }
 
-/* POST CARDS */
+/* CARDS FOR BLOG POSTS */
 
 .post-card-container {
   overflow: hidden;
@@ -333,7 +330,7 @@ footer {
   padding: 1rem;
   width: 100%;
   background-color: var(--clr-white-background);
-  /* Pushing the text content back towards the center of the card. */
+  /* Pushing the text content back towards the center of the card. Temp quickfix!*/
   /* The content was likely moved to the right due to some javascript*/
   padding-right: 3.5rem;
 }
@@ -468,7 +465,6 @@ footer {
 .track {
   display: flex;
   gap: 1rem;
-  /* margin-left: 8px; */
   transition: transform 0.7s;
   flex-wrap: nowrap;
 }
@@ -476,7 +472,6 @@ footer {
 .track .post-card-container {
   max-width: 350px;
   flex-shrink: 0;
-  /* margin-right: 1rem; */
 }
 
 .track .post-card-container:hover {
@@ -777,8 +772,6 @@ footer {
 /* POST SPECIFIC PAGE */
 /****************************************************************************/
 
-/* Specific page post content */
-
 .specific-main-heading {
   text-align: center;
 }
@@ -842,11 +835,6 @@ footer {
 .specific-meta-item {
   padding: 0.5rem 1rem;
 }
-
-/* .meta-nav {
-  display: inline-block;
-  height: 100%;
-} */
 
 .spec-meta-next {
   display: none;
