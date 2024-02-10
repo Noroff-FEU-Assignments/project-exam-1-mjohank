@@ -122,7 +122,7 @@
     padding: 2rem;
   }
 
-  /* Active takes effect on touch devices */
+  /* Styling of .nav-list li a:active takes effect on touch devices */
   .nav-list li a:hover,
   .nav-list li a:active {
     color: white;
