@@ -707,16 +707,19 @@ footer {
   padding: 0.7rem;
 }
 
-.contact-input-container {
+.contact-input-container,
+.comment-input-container {
   display: flex;
   flex-direction: column;
 }
 
-.contact-label {
+.contact-label,
+.comment-label {
   margin-bottom: 1rem;
 }
 
-.contact-input {
+.contact-input,
+.comment-input {
   padding: 0.75rem;
   border: none;
   color: var(--clr-main-txt);
@@ -724,12 +727,13 @@ footer {
   font-style: var(--f-style-italic);
 }
 
-.contact-message-container {
+.contact-message-container,
+.comment-message-container {
   margin-bottom: var(--mb-small);
 }
 
-.textarea-wrapper,
-.subject-wrapper {
+.contact-textarea-wrapper,
+.contact-subject-wrapper {
   position: relative;
 }
 
@@ -894,7 +898,7 @@ footer {
   margin: 0 auto;
 }
 
-.posted-comments-card {
+.posted-comment-card {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -904,7 +908,7 @@ footer {
   background-color: var(--clr-white-background);
 }
 
-.posted-comments-meta-bar {
+.posted-comment-meta-bar {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-small);
