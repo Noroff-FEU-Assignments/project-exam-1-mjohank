@@ -30,6 +30,10 @@ export const postsURL = baseURL + postsEndpoint + acfFormat + pagination;
 const commentsEndpoint = "comments/";
 export const commentsURL = baseURL + commentsEndpoint;
 
+//CONTACT FORM
+export const contactFormURL =
+  "https://roasted-reverie.mjohank.no/contact-form-7/v1/contact-forms/131f41c/feedback";
+
 ////////////////
 
 //OTHER CONSTANTS
