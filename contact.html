@@ -90,7 +90,7 @@
 
         <div class="contact-img"></div>
 
-        <form action="#" class="contact-form" novalidate>
+        <form class="contact-form" novalidate>
           <!-- Contact text -->
 
           <p class="contact-txt txt">
@@ -101,12 +101,14 @@
           <!-- Name input -->
 
           <div class="contact-name-container contact-input-container">
-            <label for="contact-name" class="txt contact-label"
+            <label for="your-name" class="txt contact-label"
               >Name* <span class="contact-name-feedback"></span
             ></label>
+
             <input
               type="text"
-              id="contact-name"
+              id="your-name"
+              name="your-name"
               class="contact-input txt-light br"
               placeholder="Starsky Bucksfield"
             />
@@ -115,13 +117,14 @@
           <!-- Email input -->
 
           <div class="contact-email-container contact-input-container">
-            <label for="contact-email" class="txt contact-label"
+            <label for="your-email" class="txt contact-label"
               >Email* <span class="contact-email-feedback"></span
             ></label>
+
             <input
               type="email"
-              name="contact-email"
-              id="contact-email"
+              name="your-email"
+              id="your-email"
               class="contact-input txt-light br"
               placeholder="starskybuck@example.com"
             />
@@ -130,14 +133,15 @@
           <!-- Subject input  -->
 
           <div class="contact-subject-container contact-input-container">
-            <label for="contact-subject" class="txt contact-label"
+            <label for="your-subject" class="txt contact-label"
               >Subject* <span class="contact-subject-feedback"></span
             ></label>
-            <div class="subject-wrapper">
+
+            <div class="contact-subject-wrapper">
               <input
                 type="text"
-                name="contact-subject"
-                id="contact-subject"
+                name="your-subject"
+                id="your-subject"
                 class="contact-input txt-light br"
                 placeholder="I love coffee too!"
               />
@@ -148,13 +152,14 @@
           <!-- Message textarea -->
 
           <div class="contact-message-container contact-input-container">
-            <label for="contact-textarea" class="txt contact-label"
+            <label for="your-message" class="txt contact-label"
               >Message* <span class="contact-message-feedback"></span
             ></label>
-            <div class="textarea-wrapper">
+
+            <div class="contact-textarea-wrapper">
               <textarea
-                name="contact-textarea"
-                id="contact-textarea"
+                name="your-message"
+                id="your-message"
                 class="contact-input txt-light br"
                 cols="30"
                 rows="10"
@@ -171,7 +176,8 @@
           <!-- Submit button -->
 
           <div class="contact-btn-container">
-            <button class="contact-btn btn">Send</button>
+            <!-- <button class="contact-btn btn">Send</button> -->
+            <input type="submit" class="contact-btn btn" />
           </div>
         </form>
       </section>
