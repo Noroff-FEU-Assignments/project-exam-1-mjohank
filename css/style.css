@@ -687,6 +687,7 @@ footer {
   background-image: url(/resources/Contact_image_1.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   flex: 1;
 }
 
@@ -748,6 +749,10 @@ footer {
   text-align: center;
 }
 
+.contact-finger-up {
+  animation: moveUpDown 1s infinite;
+}
+
 @keyframes moveUpDown {
   0%,
   100% {
@@ -756,10 +761,6 @@ footer {
   50% {
     transform: translateY(-10px);
   }
-}
-
-.contact-finger-up {
-  animation: moveUpDown 1s infinite;
 }
 
 .contact-btn-container {
