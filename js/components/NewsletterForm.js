@@ -1,10 +1,13 @@
+//
+//
 //IMPORT
-
 import { validateEmail } from "../utility-scripts/formValidations.js";
 
 const newsletterFeedback = document.querySelector(".newsletter-info");
 const newsletterInput = document.querySelector(".newsletter-input");
 const newsletterForm = document.querySelector(".newsletter-form");
+
+//FUNCTION TO ENSURE CORRECT FORMAT OF EMAIL AND INFORM USER OF SUBMISSION SUCCESS
 
 function validateNewsletterForm() {
   newsletterForm.addEventListener("submit", (event) => {

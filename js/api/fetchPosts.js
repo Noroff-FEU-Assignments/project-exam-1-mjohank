@@ -1,3 +1,5 @@
+//
+//
 //IMPORTS
 import {
   baseURL,
@@ -18,7 +20,6 @@ export async function fetchPosts(page = 1) {
       `${baseURL}${postsEndpoint}${acfFormat}${pagination}&page=${page}`
     );
     const postsJSON = await response.json();
-    // console.log(postsJSON);
 
     loader.innerHTML = "";
     return postsJSON;

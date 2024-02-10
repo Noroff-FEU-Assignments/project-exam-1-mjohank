@@ -1,5 +1,6 @@
-// modal.js
-
+//
+//
+// FUNCTION TO DISPLAY/CLOSE IMAGE MODAL WHEN CLICKING ON/OUTSIDE POST IMAGE
 export function openModal(imageSrc) {
   const modal = document.createElement("div");
   modal.classList.add("modal");
