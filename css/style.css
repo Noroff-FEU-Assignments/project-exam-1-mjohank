@@ -285,7 +285,7 @@ footer {
 
 .footer-social-icons {
   display: flex;
-  gap: 0.5rem;
+  gap: 1.5rem;
   font-size: 2rem;
 }
 
@@ -296,6 +296,12 @@ footer {
 .copyright-txt {
   font-size: var(--f-size-body-medium);
   font-family: var(--ff-bodytext);
+}
+
+.footer-link:hover,
+.footer-nav-list li:hover {
+  transform: scale(1.2);
+  font-weight: bold;
 }
 
 /* CARDS FOR BLOG POSTS */
@@ -571,12 +577,12 @@ footer {
 }
 
 /* Category links */
-.category-links-container {
+/* .category-links-container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   margin-bottom: var(--mb-medium);
-}
+} */
 
 /* Bloglist section */
 .bloglist-section {
