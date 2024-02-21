@@ -11,7 +11,7 @@ Roasted Reverie is a blog site built as part of a project exam, showcasing the c
 The site uses Wordpress as a headless CMS for content management and Javascript to fetch the content dynamically. Using technologies such as HTML, CSS and Javascript the site was built with responsiveness, accessibility and user interaction in mind.
   
 
-The site consists of the following pages:
+**The site consists of the following pages:**
 
 - Homepage
 - Posts
