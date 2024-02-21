@@ -1,6 +1,6 @@
 # Rainydays, cross-course project
 
-[![Roasted Reverie Homepage screenshot](https://github.com/Noroff-FEU-Assignments/project-exam-1-mjohank/blob/main/resources/Roasted-Reverie_screenshot-2.jpg)](https://roasted-reverie.netlify.app/)
+[![Roasted Reverie Homepage screenshot](https://github.com/Noroff-FEU-Assignments/project-exam-1-mjohank/blob/main/resources/Screenshot_Roasted-Reverie.jpg)](https://roasted-reverie.netlify.app/)
 
 
 Project Exam: Roasted Reverie, a coffee related blog site
